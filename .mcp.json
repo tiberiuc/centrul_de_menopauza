@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tidewave": {
+      "type": "sse-first",
+      "url": "http://localhost:4400/tidewave/mcp"
+    }
+  }
+}

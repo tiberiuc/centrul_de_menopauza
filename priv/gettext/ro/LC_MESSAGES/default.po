@@ -1,0 +1,390 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
+
+msgid "Welcome"
+msgstr "Bun venit"
+
+msgid "Home"
+msgstr "Acasă"
+
+msgid "Services"
+msgstr "Servicii"
+
+msgid "About"
+msgstr "Despre noi"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Your journey to wellness starts here"
+msgstr "Călătoria ta către bunăstare începe aici"
+
+msgid "Specialized care for menopause and women's health"
+msgstr "Îngrijire specializată pentru menopauzā și sănătatea femeilor"
+
+msgid "Book Consultation"
+msgstr "Rezervă consultație"
+
+msgid "Our Services"
+msgstr "Serviciile noastre"
+
+msgid "Hormone Therapy"
+msgstr "Terapie hormonală"
+
+msgid "Personalized hormone replacement therapy to manage menopausal symptoms effectively"
+msgstr "Terapie hormonală de înlocuire personalizată pentru gestionarea eficientă a simptomelor menopauzeí"
+
+msgid "Nutritional Counseling"
+msgstr "Consiliere nutrițională"
+
+msgid "Expert dietary guidance to support your health during menopause transition"
+msgstr "Îndrumări dietetice specializate pentru susținerea sănătății în timpul tranziției menopauzeí"
+
+msgid "Wellness Programs"
+msgstr "Programe de wellness"
+
+msgid "Comprehensive lifestyle programs designed for optimal menopausal health"
+msgstr "Programe de stil de viață complete concepute pentru sănătatea optimă în timpul menopauzeí"
+
+msgid "About Our Center"
+msgstr "Despre centrul nostru"
+
+msgid "We are dedicated to providing compassionate, evidence-based care for women experiencing menopause. Our team of specialists understands the unique challenges of this life transition and offers personalized treatment plans."
+msgstr "Suntem dedicați furnizării de îngrijiri compatibile și bazate pe dovezi pentru femeile care trec prin menopauză. Echipa noastră de specialiști înțelege provocările unice ale acestei tranziții de viață și oferă planuri de tratament personalizate."
+
+msgid "Get in Touch"
+msgstr "Ia legătura cu noi"
+
+msgid "Ready to take the next step in your wellness journey? Contact us today to schedule your consultation."
+msgstr "Ești gata să faci următorul pas în călătoria ta către bunăstare? Contactează-ne astăzi pentru a-ți programa consultația."
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Address"
+msgstr "Adresă"
+
+msgid "Schedule Appointment"
+msgstr "Programează întâlnire"
+
+msgid "Years of Experience"
+msgstr "Ani de experiență"
+
+msgid "Satisfied Patients"
+msgstr "Pacienți mulțumiți"
+
+msgid "Treatment Options"
+msgstr "Opțiuni de tratament"
+
+msgid "Centrul de Menopauză"
+msgstr "Centrul de Menopauză"
+
+msgid "Learn More"
+msgstr "Află mai multe"
+
+msgid "Comprehensive care tailored to your unique needs during menopause"
+msgstr "Îngrijire completă adaptată nevoilor tale unice în timpul menopauzeí"
+
+msgid "Evidence-based treatments"
+msgstr "Tratamente bazate pe dovezi"
+
+msgid "Personalized care plans"
+msgstr "Planuri de îngrijire personalizate"
+
+msgid "Experienced specialists"
+msgstr "Specialiști cu experiență"
+
+msgid "Holistic approach"
+msgstr "Abordare holistică"
+
+msgid "Name"
+msgstr "Nume"
+
+msgid "Your name"
+msgstr "Numele tău"
+
+msgid "Your email"
+msgstr "Emailul tău"
+
+msgid "Your phone number"
+msgstr "Numărul tău de telefon"
+
+msgid "Message"
+msgstr "Mesaj"
+
+msgid "How can we help you?"
+msgstr "Cum te putem ajuta?"
+
+msgid "All rights reserved."
+msgstr "Toate drepturile rezervate."
+
+msgid "Consultație Specializată Menopauză"
+msgstr "Consultație Specializată Menopauză"
+
+msgid "Consultația de menopauză merge mult mai departe decât ginecologia clasică. Menopauza nu este o boală, ci o etapă de tranziție hormonală, dar aduce schimbări importante în întreg organismul."
+msgstr "Consultația de menopauză merge mult mai departe decât ginecologia clasică. Menopauza nu este o boală, ci o etapă de tranziție hormonală, dar aduce schimbări importante în întreg organismul."
+
+msgid "Consultație Online Menopauză"
+msgstr "Consultație Online Menopauză"
+
+msgid "Consultația online de menopauză oferă același nivel profesional ca cea fizică, adaptată pentru confortul și intimitatea propriului cămin. Ideal pentru prima evaluare sau monitorizarea evoluției simptomelor."
+msgstr "Consultația online de menopauză oferă același nivel profesional ca cea fizică, adaptată pentru confortul și intimitatea propriului cămin. Ideal pentru prima evaluare sau monitorizarea evoluției simptomelor."
+
+msgid "Consultație Ginecologică"
+msgstr "Consultație Ginecologică"
+
+msgid "Examen ginecologic complet, control preventiv anual, ecografie transvaginală și consultanță pentru sănătatea reproductivă."
+msgstr "Examen ginecologic complet, control preventiv anual, ecografie transvaginală și consultanță pentru sănătatea reproductivă."
+
+msgid "Ce presupune o consultație de menopauză?"
+msgstr "Ce presupune o consultație de menopauză?"
+
+msgid "Evaluarea detaliată a simptomelor tipice: bufeuri, insomnie, iritabilitate, scăderea libidoului, uscăciune vaginală"
+msgstr "Evaluarea detaliată a simptomelor tipice: bufeuri, insomnie, iritabilitate, scăderea libidoului, uscăciune vaginală"
+
+msgid "Discuție despre riscurile pe termen lung asociate deficitului hormonal: osteoporoză, boli cardiovasculare, probleme metabolice"
+msgstr "Discuție despre riscurile pe termen lung asociate deficitului hormonal: osteoporoză, boli cardiovasculare, probleme metabolice"
+
+msgid "Analize hormonale și metabolice personalizate"
+msgstr "Analize hormonale și metabolice personalizate"
+
+msgid "Plan de tratament și prevenție: terapie de substituție hormonală (când este indicată), tratamente non-hormonale, nutriție, stil de viață"
+msgstr "Plan de tratament și prevenție: terapie de substituție hormonală (când este indicată), tratamente non-hormonale, nutriție, stil de viață"
+
+msgid "Colaborare interdisciplinară (endocrinologie, cardiologie, nutriție, psihologie) pentru o abordare completă a sănătății femeii"
+msgstr "Colaborare interdisciplinară (endocrinologie, cardiologie, nutriție, psihologie) pentru o abordare completă a sănătății femeii"
+
+msgid "Este o consultație holistică, axată pe echilibrul hormonal și longevitate, nu doar pe aparatul genital."
+msgstr "Este o consultație holistică, axată pe echilibrul hormonal și longevitate, nu doar pe aparatul genital."
+
+msgid "Ce include consultația:"
+msgstr "Ce include consultația:"
+
+msgid "Ce presupune consultația online de menopauză?"
+msgstr "Ce presupune consultația online de menopauză?"
+
+msgid "Evaluarea detaliată a simptomelor prin chestionar online și discuție video"
+msgstr "Evaluarea detaliată a simptomelor prin chestionar online și discuție video"
+
+msgid "Analiză a istoricului medical și a factorilor de risc"
+msgstr "Analiză a istoricului medical și a factorilor de risc"
+
+msgid "Recomandări personalizate pentru analize hormonale și metabolice"
+msgstr "Recomandări personalizate pentru analize hormonale și metabolice"
+
+msgid "Strategie inițială de management: suplimente, nutriție, modificări de stil de viață"
+msgstr "Strategie inițială de management: suplimente, nutriție, modificări de stil de viață"
+
+msgid "Planificarea următorilor pași: consultații de urmărire sau evaluare fizică când este necesară"
+msgstr "Planificarea următorilor pași: consultații de urmărire sau evaluare fizică când este necesară"
+
+msgid "Consultația se desfășoară pe platformă securizată, cu confidențialitate garantată și acces din orice locație."
+msgstr "Consultația se desfășoară pe platformă securizată, cu confidențialitate garantată și acces din orice locație."
+
+msgid "Examen ginecologic clinic complet"
+msgstr "Examen ginecologic clinic complet"
+
+msgid "Ecografie transvaginală de înaltă rezoluție"
+msgstr "Ecografie transvaginală de înaltă rezoluție"
+
+msgid "Recoltare frotiu cervical (Pap test)"
+msgstr "Recoltare frotiu cervical (Pap test)"
+
+msgid "Evaluarea sănătății reproductive"
+msgstr "Evaluarea sănătății reproductive"
+
+msgid "Recomandări pentru investigații suplimentare"
+msgstr "Recomandări pentru investigații suplimentare"
+
+msgid "Ghid Menopauză"
+msgstr "Ghid Menopauză"
+
+msgid "Înțelegerea Menopauzei: Ghid Complet"
+msgstr "Înțelegerea Menopauzei: Ghid Complet"
+
+msgid "Cunoaște etapele și schimbările prin care trece corpul femeii în această perioadă importantă de viață"
+msgstr "Cunoaște etapele și schimbările prin care trece corpul femeii în această perioadă importantă de viață"
+
+msgid "Perimenopauza"
+msgstr "Perimenopauza"
+
+msgid "Perimenopauza este perioada de tranziție care începe înainte de menopauză, când ovarul începe să producă mai puțin estrogen. Poate dura între 2-10 ani și se termină când menstruația se oprește complet."
+msgstr "Perimenopauza este perioada de tranziție care începe înainte de menopauză, când ovarul începe să producă mai puțin estrogen. Poate dura între 2-10 ani și se termină când menstruația se oprește complet."
+
+msgid "Când începe?"
+msgstr "Când începe?"
+
+msgid "De obicei între 35-45 de ani, dar poate varia. Femeile fumătoare pot intra în perimenopauză cu 1-2 ani mai devreme."
+msgstr "De obicei între 35-45 de ani, dar poate varia. Femeile fumătoare pot intra în perimenopauză cu 1-2 ani mai devreme."
+
+msgid "Simptome Perimenopauză"
+msgstr "Simptome Perimenopauză"
+
+msgid "Bufeuri de căldură"
+msgstr "Bufeuri de căldură"
+
+msgid "Tulburări de somn"
+msgstr "Tulburări de somn"
+
+msgid "Menstruații neregulate"
+msgstr "Menstruații neregulate"
+
+msgid "Schimbări de dispoziție"
+msgstr "Schimbări de dispoziție"
+
+msgid "Probleme de concentrare"
+msgstr "Probleme de concentrare"
+
+msgid "Creștere în greutate"
+msgstr "Creștere în greutate"
+
+msgid "Scăderea libidoului"
+msgstr "Scăderea libidoului"
+
+msgid "Managementul Perimenopauzei"
+msgstr "Managementul Perimenopauzei"
+
+msgid "Dietă echilibrată, exerciții regulate, gestionarea stresului și opțiuni de tratament personalizate."
+msgstr "Dietă echilibrată, exerciții regulate, gestionarea stresului și opțiuni de tratament personalizate."
+
+msgid "Menopauza"
+msgstr "Menopauza"
+
+msgid "Menopauza este momentul când menstruația se oprește definitiv. Este diagnosticată retrospectiv după 12 luni consecutive fără menstruație la femei peste 45 de ani."
+msgstr "Menopauza este momentul când menstruația se oprește definitiv. Este diagnosticată retrospectiv după 12 luni consecutive fără menstruație la femei peste 45 de ani."
+
+msgid "Vârsta medie"
+msgstr "Vârsta medie"
+
+msgid "51 de ani în România, dar poate varia între 45-55 de ani. Factori genetici, stilul de viață și starea de sănătate influențează momentul apariției."
+msgstr "51 de ani în România, dar poate varia între 45-55 de ani. Factori genetici, stilul de viață și starea de sănătate influențează momentul apariției."
+
+msgid "Tipuri de menopauză"
+msgstr "Tipuri de menopauză"
+
+msgid "Naturală: Proces biologic normal"
+msgstr "Naturală: Proces biologic normal"
+
+msgid "Chirurgicală: După îndepărtarea ovarelor"
+msgstr "Chirurgicală: După îndepărtarea ovarelor"
+
+msgid "Prematură: Înainte de 40 de ani"
+msgstr "Prematură: Înainte de 40 de ani"
+
+msgid "Precoce: Între 40-45 de ani"
+msgstr "Precoce: Între 40-45 de ani"
+
+msgid "Simptome principale"
+msgstr "Simptome principale"
+
+msgid "Bufeuri de căldură (80% dintre femei)"
+msgstr "Bufeuri de căldură (80% dintre femei)"
+
+msgid "Transpirații nocturne"
+msgstr "Transpirații nocturne"
+
+msgid "Depresie și anxietate"
+msgstr "Depresie și anxietate"
+
+msgid "Insomnie"
+msgstr "Insomnie"
+
+msgid "Ceață mentală"
+msgstr "Ceață mentală"
+
+msgid "Riscuri pe Termen Lung"
+msgstr "Riscuri pe Termen Lung"
+
+msgid "Osteoporoză"
+msgstr "Osteoporoză"
+
+msgid "Boli cardiovasculare"
+msgstr "Boli cardiovasculare"
+
+msgid "Risc crescut de demență"
+msgstr "Risc crescut de demență"
+
+msgid "Sindrom metabolic"
+msgstr "Sindrom metabolic"
+
+msgid "Postmenopauza"
+msgstr "Postmenopauza"
+
+msgid "Postmenopauza este perioada care urmează după menopauză și durează restul vieții. Nivelurile hormonale rămân scăzute și stabile."
+msgstr "Postmenopauza este perioada care urmează după menopauză și durează restul vieții. Nivelurile hormonale rămân scăzute și stabile."
+
+msgid "După 12 luni consecutive fără menstruație. Majoritatea simptomelor acute se ameliorează treptat."
+msgstr "După 12 luni consecutive fără menstruație. Majoritatea simptomelor acute se ameliorează treptat."
+
+msgid "Focus pe sănătate"
+msgstr "Focus pe sănătate"
+
+msgid "Activitate fizică regulată"
+msgstr "Activitate fizică regulată"
+
+msgid "Nutriție optimizată"
+msgstr "Nutriție optimizată"
+
+msgid "Suplimentare cu calciu și vitamina D"
+msgstr "Suplimentare cu calciu și vitamina D"
+
+msgid "Controale medicale regulate"
+msgstr "Controale medicale regulate"
+
+msgid "Gestionarea stresului"
+msgstr "Gestionarea stresului"
+
+msgid "Igienă optimă a somnului"
+msgstr "Igienă optimă a somnului"
+
+msgid "Suport social și emoțional"
+msgstr "Suport social și emoțional"
+
+msgid "Un nou început"
+msgstr "Un nou început"
+
+msgid "Postmenopauza poate fi o perioadă de reinventare, libertate și focusare pe propriile nevoi și obiective."
+msgstr "Postmenopauza poate fi o perioadă de reinventare, libertate și focusare pe propriile nevoi și obiective."
+
+msgid "Ce este Perimenopauza?"
+msgstr "Ce este Perimenopauza?"
+
+msgid "Card 2 - Perimenopauză"
+msgstr "Card 2 - Perimenopauză"
+
+msgid "Card 3 - Perimenopauză"
+msgstr "Card 3 - Perimenopauză"
+
+msgid "Card 1 - Menopauză"
+msgstr "Card 1 - Menopauză"
+
+msgid "Card 2 - Menopauză"
+msgstr "Card 2 - Menopauză"
+
+msgid "Card 3 - Menopauză"
+msgstr "Card 3 - Menopauză"
+
+msgid "Card 1 - Postmenopauză"
+msgstr "Card 1 - Postmenopauză"
+
+msgid "Card 2 - Postmenopauză"
+msgstr "Card 2 - Postmenopauză"
+
+msgid "Card 3 - Postmenopauză"
+msgstr "Card 3 - Postmenopauză"
+
+msgid "Conținut în așteptare..."
+msgstr "Conținut în așteptare..."

@@ -181,11 +181,9 @@ defmodule CmenWeb.HomeLive do
                 </button>
               </div>
             </div>
-            <div class="relative flex justify-center items-center">
-              <div class="w-64 h-64 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full p-6 shadow-2xl">
-                <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
-                  <.icon name="hero-heart" class="h-20 w-20 text-pink-600" />
-                </div>
+            <div class="relative flex justify-center items-center p-8">
+              <div class="w-80 h-80 rounded-full overflow-hidden shadow-2xl">
+                <img src="/images/centrul-de-menopauza.jpeg" alt="Centrul de Menopauză" class="w-full h-full object-cover" />
               </div>
             </div>
           </div>

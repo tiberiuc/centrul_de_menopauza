@@ -362,9 +362,6 @@ msgstr "Postmenopauza poate fi o perioadă de reinventare, libertate și focusar
 msgid "Ce este Perimenopauza?"
 msgstr "Ce este Perimenopauza?"
 
-msgid "Card 2 - Perimenopauză"
-msgstr "Card 2 - Perimenopauză"
-
 msgid "Card 3 - Perimenopauză"
 msgstr "Card 3 - Perimenopauză"
 
@@ -388,3 +385,30 @@ msgstr "Card 3 - Postmenopauză"
 
 msgid "Conținut în așteptare..."
 msgstr "Conținut în așteptare..."
+
+msgid "Modificări de stil de viață:"
+msgstr "Modificări de stil de viață:"
+
+msgid "Dietă echilibrată rica în calciu și vitamina D"
+msgstr "Dietă echilibrată rica în calciu și vitamina D"
+
+msgid "Exerciții regulate (150 min/săptămână)"
+msgstr "Exerciții regulate (150 min/săptămână)"
+
+msgid "Gestionarea stresului prin meditație"
+msgstr "Gestionarea stresului prin meditație"
+
+msgid "Evitarea alcoolului și a cafeii excessive"
+msgstr "Evitarea alcoolului și a cafeii excessive"
+
+msgid "Opțiuni de tratament:"
+msgstr "Opțiuni de tratament:"
+
+msgid "Contraceptive cu doze mici de hormoni"
+msgstr "Contraceptive cu doze mici de hormoni"
+
+msgid "Antidepresive pentru bufeuri"
+msgstr "Antidepresive pentru bufeuri"
+
+msgid "Suplimente naturale (isoflavone)"
+msgstr "Suplimente naturale (isoflavone)"

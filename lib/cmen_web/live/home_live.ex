@@ -1105,7 +1105,7 @@ defmodule CmenWeb.HomeLive do
                   <span class="text-4xl mb-3 block">💊</span>
                   <h4 class="font-semibold text-gray-900"><%= gettext("Capsule Orale") %></h4>
                 </div>
-                <div class="space-y-2 text-sm">
+                <div class="space-y-2 text-sm text-gray-600">
                   <p><strong class="text-green-600"><%= gettext("Avantaje:") %></strong> <%= gettext("Convenabile, dozaj precis") %></p>
                   <p><strong class="text-orange-600"><%= gettext("Dezavantaje:") %></strong> <%= gettext("Metabolism hepatic") %></p>
                   <p><strong class="text-blue-600"><%= gettext("Ideal pentru:") %></strong> <%= gettext("Progesterone") %></p>
@@ -1117,7 +1117,7 @@ defmodule CmenWeb.HomeLive do
                   <span class="text-4xl mb-3 block">🧴</span>
                   <h4 class="font-semibold text-gray-900"><%= gettext("Geluri și Creme") %></h4>
                 </div>
-                <div class="space-y-2 text-sm">
+                <div class="space-y-2 text-sm text-gray-600">
                   <p><strong class="text-green-600"><%= gettext("Avantaje:") %></strong> <%= gettext("Absorbție directă, evită ficatul") %></p>
                   <p><strong class="text-orange-600"><%= gettext("Dezavantaje:") %></strong> <%= gettext("Aplicare zilnică") %></p>
                   <p><strong class="text-blue-600"><%= gettext("Ideal pentru:") %></strong> <%= gettext("Estrogen, Testosterone") %></p>
@@ -1129,7 +1129,7 @@ defmodule CmenWeb.HomeLive do
                   <span class="text-4xl mb-3 block">🏥</span>
                   <h4 class="font-semibold text-gray-900"><%= gettext("Plasturi Transdermice") %></h4>
                 </div>
-                <div class="space-y-2 text-sm">
+                <div class="space-y-2 text-sm text-gray-600">
                   <p><strong class="text-green-600"><%= gettext("Avantaje:") %></strong> <%= gettext("Eliberare constantă, convenabile") %></p>
                   <p><strong class="text-orange-600"><%= gettext("Dezavantaje:") %></strong> <%= gettext("Posibile iritații locale") %></p>
                   <p><strong class="text-blue-600"><%= gettext("Ideal pentru:") %></strong> <%= gettext("Estrogen") %></p>

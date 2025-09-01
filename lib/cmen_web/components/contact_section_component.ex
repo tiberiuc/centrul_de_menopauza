@@ -2,6 +2,7 @@ defmodule CmenWeb.ContactSectionComponent do
   use CmenWeb, :html
 
   attr :class, :string, default: nil
+  attr :form_data, :map, default: %{}
 
   def contact_section(assigns) do
     ~H"""
@@ -20,7 +21,7 @@ defmodule CmenWeb.ContactSectionComponent do
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <.contact_information />
-          <.contact_form />
+          <.contact_form form_data={@form_data} />
         </div>
       </div>
     </section>
@@ -51,16 +52,20 @@ defmodule CmenWeb.ContactSectionComponent do
     """
   end
 
+  attr :form_data, :map, default: %{}
+
   defp contact_form(assigns) do
     ~H"""
     <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-8">
-      <form class="space-y-6">
+      <form id="contact-form" class="space-y-6" phx-submit="send_contact_email" phx-hook="ResetForm">
         <.form_field
           type="text"
           id="name"
           name="name"
           label={gettext("Name")}
           placeholder={gettext("Your name")}
+          required="true"
+          value={@form_data["name"] || ""}
         />
 
         <.form_field
@@ -69,6 +74,8 @@ defmodule CmenWeb.ContactSectionComponent do
           name="email"
           label={gettext("Email")}
           placeholder={gettext("Your email")}
+          required="true"
+          value={@form_data["email"] || ""}
         />
 
         <.form_field
@@ -77,6 +84,7 @@ defmodule CmenWeb.ContactSectionComponent do
           name="phone"
           label={gettext("Phone")}
           placeholder={gettext("Your phone number")}
+          value={@form_data["phone"] || ""}
         />
 
         <div>
@@ -87,14 +95,15 @@ defmodule CmenWeb.ContactSectionComponent do
             id="message"
             name="message"
             rows="4"
-            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-black"
             placeholder={gettext("How can we help you?")}
-          ></textarea>
+            required
+          ><%= @form_data["message"] || "" %></textarea>
         </div>
 
         <button
           type="submit"
-          class="w-full bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
+          class="w-full bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors shadow-lg hover:shadow-xl disabled:opacity-50"
         >
           {gettext("Schedule Appointment")}
         </button>
@@ -128,6 +137,8 @@ defmodule CmenWeb.ContactSectionComponent do
   attr :name, :string, required: true
   attr :label, :string, required: true
   attr :placeholder, :string, required: true
+  attr :required, :string, default: "false"
+  attr :value, :string, default: ""
 
   defp form_field(assigns) do
     ~H"""
@@ -139,8 +150,10 @@ defmodule CmenWeb.ContactSectionComponent do
         type={@type}
         id={@id}
         name={@name}
-        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+        value={@value}
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-black"
         placeholder={@placeholder}
+        required={@required == "true"}
       />
     </div>
     """

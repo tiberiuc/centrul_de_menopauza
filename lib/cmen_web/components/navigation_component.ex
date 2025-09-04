@@ -23,6 +23,9 @@ defmodule CmenWeb.NavigationComponent do
               <.nav_button section="home">
                 {gettext("Home")}
               </.nav_button>
+              <.nav_button section="about">
+                {gettext("About")}
+              </.nav_button>
               <.nav_button section="services">
                 {gettext("Services")}
               </.nav_button>
@@ -31,9 +34,6 @@ defmodule CmenWeb.NavigationComponent do
               </.nav_button>
               <.nav_button section="bhrt">
                 {gettext("Terapie BHRT")}
-              </.nav_button>
-              <.nav_button section="about">
-                {gettext("About")}
               </.nav_button>
               <.nav_button section="contact">
                 {gettext("Contact")}
@@ -69,6 +69,9 @@ defmodule CmenWeb.NavigationComponent do
         <.mobile_nav_button section="home">
           {gettext("Home")}
         </.mobile_nav_button>
+        <.mobile_nav_button section="about">
+          {gettext("About")}
+        </.mobile_nav_button>
         <.mobile_nav_button section="services">
           {gettext("Services")}
         </.mobile_nav_button>
@@ -77,9 +80,6 @@ defmodule CmenWeb.NavigationComponent do
         </.mobile_nav_button>
         <.mobile_nav_button section="bhrt">
           {gettext("Terapie BHRT")}
-        </.mobile_nav_button>
-        <.mobile_nav_button section="about">
-          {gettext("About")}
         </.mobile_nav_button>
         <.mobile_nav_button section="contact">
           {gettext("Contact")}

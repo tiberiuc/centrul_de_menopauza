@@ -7,21 +7,52 @@ defmodule CmenWeb.AboutSectionComponent do
     ~H"""
     <section id="about" class={["py-20 bg-gray-50", @class]}>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              {gettext("About Our Center")}
+              Despre Centrul Nostru
             </h2>
-            <p class="text-lg text-gray-600 leading-relaxed mb-8">
-              {gettext(
-                "We are dedicated to providing compassionate, evidence-based care for women experiencing menopause. Our team of specialists understands the unique challenges of this life transition and offers personalized treatment plans."
-              )}
-            </p>
-            <div class="space-y-4">
-              <.feature_item text={gettext("Evidence-based treatments")} />
-              <.feature_item text={gettext("Personalized care plans")} />
-              <.feature_item text={gettext("Experienced specialists")} />
-              <.feature_item text={gettext("Holistic approach")} />
+            <div class="space-y-6 mb-8">
+              <p class="text-lg text-gray-700 leading-relaxed">
+                Suntem primul centru din Brașov dedicat exclusiv menopauzei și sănătății feminine.
+              </p>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                Echipa noastră este formată din specialiști acreditați internațional în managementul menopauzei și terapia de substituție hormonală, mereu la curent cu cele mai recente studii și recomandări medicale.
+              </p>
+              <p class="text-lg text-gray-700 leading-relaxed">
+                Misiunea noastră este să oferim fiecărei femei echilibru, vitalitate și încredere în această etapă importantă a vieții.
+              </p>
+            </div>
+            
+            <div class="mb-8">
+              <h4 class="text-xl font-semibold text-gray-900 mb-6">
+                La noi, fiecare pacientă beneficiază de:
+              </h4>
+              <div class="space-y-4">
+                <.detailed_feature_item 
+                  emoji="👩‍⚕️" 
+                  text="Echipă de specialiști acreditați internațional în managementul menopauzei și terapia de substituție hormonală, mereu conectați la cele mai noi ghiduri și studii medicale." 
+                />
+                <.detailed_feature_item 
+                  emoji="🧬" 
+                  text="Abordare integrată – de la consultații și analize complete până la terapii hormonale bioidentice (BHRT) și programe de prevenție pe termen lung." 
+                />
+                <.detailed_feature_item 
+                  emoji="🌿" 
+                  text="Tratamente moderne și sigure, adaptate nevoilor individuale." 
+                />
+                <.detailed_feature_item 
+                  emoji="💖" 
+                  text="Suport constant, pentru ca fiecare femeie să se simtă înțeleasă, ascultată și susținută." 
+                />
+              </div>
+            </div>
+
+            <div class="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
+              <p class="text-blue-800 font-medium flex items-start">
+                <span class="mr-3 text-lg">👉</span>
+                <span>Misiunea noastră este să transformăm experiența menopauzei într-o etapă de echilibru, vitalitate și încredere.</span>
+              </p>
             </div>
           </div>
           <div class="space-y-8">
@@ -66,6 +97,18 @@ defmodule CmenWeb.AboutSectionComponent do
     <div class="flex items-center">
       <.icon name="hero-check-circle" class="h-6 w-6 text-green-600 mr-3" />
       <span class="text-gray-700">{@text}</span>
+    </div>
+    """
+  end
+
+  attr :emoji, :string, required: true
+  attr :text, :string, required: true
+
+  defp detailed_feature_item(assigns) do
+    ~H"""
+    <div class="flex items-start">
+      <span class="text-xl mr-4 mt-1 flex-shrink-0">{@emoji}</span>
+      <span class="text-gray-700 leading-relaxed">{@text}</span>
     </div>
     """
   end

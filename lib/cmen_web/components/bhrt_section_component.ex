@@ -34,38 +34,48 @@ defmodule CmenWeb.BhrtSectionComponent do
     <div class="mb-20">
       <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 lg:p-12">
         <h3 class="text-2xl font-bold text-gray-900 mb-6">
-          {gettext("Ce este Terapia Hormonală Bioidentică?")}
+          Ce este Terapia Hormonală Bioidentică?
         </h3>
-        <p class="text-lg text-gray-600 leading-relaxed mb-8">
-          {gettext(
-            "BHRT folosește hormoni derivați din plante, identici la nivel molecular cu hormonii produși natural de corpul feminin. Spre deosebire de hormonii sintetici, hormonii bioidentici au aceeași structură chimică ca estrogenul, progesteronul și testosteronul naturali."
-          )}
-        </p>
+        <div class="mb-8">
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
+            BHRT utilizează hormoni derivați din plante (soia, ignam sălbatic), care au structură moleculară identică cu cea a hormonilor produși natural de corpul feminin.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Spre deosebire de hormonii sintetici, hormonii bioidentici sunt mai bine recunoscuți de organism, asigurând o toleranță crescută și un profil de siguranță mai bun.
+          </p>
+        </div>
+
+        <div class="mb-8">
+          <h4 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+            <span class="mr-3">✅</span>
+            Beneficiile BHRT
+          </h4>
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <.benefit_card
+          <.detailed_benefit_card
             emoji="🌿"
             bg_color="bg-green-500"
-            title={gettext("Natural și Sigur")}
-            description={gettext("Hormoni derivați din plante, identici cu cei naturali")}
+            title="Natural și sigur"
+            description="Hormonii bioidentici provin din surse vegetale și sunt metabolizați de corp ca propriii hormoni."
           />
-          <.benefit_card
+          <.detailed_benefit_card
             emoji="🎯"
             bg_color="bg-blue-500"
-            title={gettext("Personalizat")}
-            description={gettext("Dozaj adaptat nevoilor individuale")}
+            title="Personalizat"
+            description="Dozajul este ajustat în funcție de analize, simptome și nevoile fiecărei paciente."
           />
-          <.benefit_card
+          <.detailed_benefit_card
             emoji="⚖️"
             bg_color="bg-purple-500"
-            title={gettext("Echilibrat")}
-            description={gettext("Restabilește echilibrul hormonal natural")}
+            title="Echilibrat"
+            description="Ajută la reducerea bufeurilor, insomniei, schimbărilor de dispoziție și la prevenirea complicațiilor (osteoporoză, boli cardiovasculare)."
           />
-          <.benefit_card
+          <.detailed_benefit_card
             emoji="💊"
             bg_color="bg-pink-500"
-            title={gettext("Flexibil")}
-            description={gettext("Multiple forme de administrare")}
+            title="Flexibil"
+            description="Disponibil sub formă de capsule, geluri, creme, plasturi sau ovule – în funcție de preferințe și recomandarea medicului."
           />
         </div>
       </div>
@@ -398,6 +408,23 @@ defmodule CmenWeb.BhrtSectionComponent do
       >
         {gettext("Consultație BHRT")}
       </button>
+    </div>
+    """
+  end
+
+  attr :emoji, :string, required: true
+  attr :bg_color, :string, required: true
+  attr :title, :string, required: true
+  attr :description, :string, required: true
+
+  defp detailed_benefit_card(assigns) do
+    ~H"""
+    <div class="bg-white rounded-xl p-6 shadow-sm h-full flex flex-col">
+      <div class={"w-12 h-12 #{@bg_color} rounded-lg flex items-center justify-center mb-4"}>
+        <span class="text-2xl">{@emoji}</span>
+      </div>
+      <h4 class="font-semibold text-gray-900 mb-3">{@title}</h4>
+      <p class="text-sm text-gray-600 leading-relaxed flex-grow">{@description}</p>
     </div>
     """
   end

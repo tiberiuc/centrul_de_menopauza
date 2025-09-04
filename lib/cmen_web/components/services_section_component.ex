@@ -47,8 +47,8 @@ defmodule CmenWeb.ServicesSectionComponent do
             icon="hero-clipboard-document-check"
             bg_color="from-purple-50 to-indigo-50"
             icon_color="bg-purple-600"
-            price="380 Lei"
-            duration="30 min"
+            price="500 Lei"
+            duration="30-45 min"
             includes={[]}
             check_color="text-purple-600"
           />
@@ -59,8 +59,8 @@ defmodule CmenWeb.ServicesSectionComponent do
             icon="hero-computer-desktop"
             bg_color="from-blue-50 to-cyan-50"
             icon_color="bg-blue-600"
-            price="380 Lei"
-            duration="30 min"
+            price="500 Lei"
+            duration="30-45 min"
             includes={[]}
             check_color="text-blue-600"
           />
@@ -71,7 +71,7 @@ defmodule CmenWeb.ServicesSectionComponent do
             icon="hero-chart-bar"
             bg_color="from-orange-50 to-amber-50"
             icon_color="bg-orange-600"
-            price="380 Lei"
+            price="300 Lei"
             duration="30 min"
             includes={[]}
             check_color="text-orange-600"
@@ -83,7 +83,7 @@ defmodule CmenWeb.ServicesSectionComponent do
             icon="hero-device-tablet"
             bg_color="from-teal-50 to-emerald-50"
             icon_color="bg-teal-600"
-            price="380 Lei"
+            price="300 Lei"
             duration="30 min"
             includes={[]}
             check_color="text-teal-600"

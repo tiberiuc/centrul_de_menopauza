@@ -40,7 +40,7 @@ defmodule CmenWeb.ContactSectionComponent do
       <.contact_item
         icon="hero-envelope"
         title={gettext("Email")}
-        content="centruldemenopauza@gmail.com"
+        content="contact@aestheticlab.ro"
       />
 
       <.contact_item

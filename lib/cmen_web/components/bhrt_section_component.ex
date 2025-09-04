@@ -79,65 +79,107 @@ defmodule CmenWeb.BhrtSectionComponent do
       <h3 class="text-2xl font-bold text-gray-900 text-center mb-12">
         {gettext("Hormonii Utilizați în BHRT")}
       </h3>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <.hormone_card
-          emoji="🌸"
-          title={gettext("Estrogen Bioidentic")}
+
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 mb-12">
+        <p class="text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto mb-6">
+          În BHRT (Bioidentical Hormone Replacement Therapy / Terapia de substituție hormonală cu hormoni bioidentici) sunt folosiți hormoni care au structură moleculară identică cu cea a hormonilor produși natural de organismul uman. Ei pot fi administrați sub formă de creme, geluri, capsule, supozitoare sau plasturi, în funcție de nevoile pacientei și de recomandarea medicului.
+        </p>
+        <h4 class="text-xl font-semibold text-gray-900 text-center mb-8">
+          Principalii hormoni utilizați în BHRT:
+        </h4>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <.detailed_hormone_card
+          emoji="🔹"
+          title="Estrogenii bioidentici"
           bg_color="bg-pink-50"
-          border_color="border-pink-100"
+          border_color="border-pink-200"
           title_color="text-pink-800"
-          types={gettext("Estradiol (E2), Estriol (E3), Estron (E1)")}
-          benefits={[
-            gettext("Reducerea bufeurilor de căldură"),
-            gettext("Îmbunătățirea uscăciunii vaginale"),
-            gettext("Protecția densității osoase"),
-            gettext("Menținerea funcției cognitive"),
-            gettext("Îmbunătățirea calității somnului")
+          types={[
+            {"Estradiol (E2)",
+             "principalul estrogen activ la femeile aflate în premenopauză și menopauză"},
+            {"Estriol (E3)",
+             "considerat mai blând, utilizat mai ales pentru sănătatea vaginală și prevenirea uscăciunii/atrofiei"}
           ]}
-          forms={gettext("Gel, plasturi, tablete, ovule vaginale")}
+          role="reduc bufeurile, transpirațiile nocturne, insomniile, previn osteoporoza, mențin sănătatea cardiovasculară și a pielii"
+          forms={gettext("Gel, plasturi, ovule vaginale")}
           forms_bg="bg-pink-100"
           forms_text_color="text-pink-700"
           forms_title_color="text-pink-800"
         />
 
-        <.hormone_card
-          emoji="🌙"
-          title={gettext("Progesteron Bioidentic")}
+        <.detailed_hormone_card
+          emoji="🔹"
+          title="Progesteron bioidentic (micronizat)"
           bg_color="bg-purple-50"
-          border_color="border-purple-100"
+          border_color="border-purple-200"
           title_color="text-purple-800"
-          types={gettext("Echilibrează efectele estrogenului și protejează endometrul")}
-          benefits={[
-            gettext("Îmbunătățirea calității somnului"),
-            gettext("Reducerea anxietății"),
-            gettext("Protecția împotriva cancerului endometrial"),
-            gettext("Stabilizarea dispoziției"),
-            gettext("Reducerea retenției de apă")
+          types={[
+            {"Se administrează frecvent în combinație cu estrogen",
+             "pentru a proteja endometrul (mucoasa uterină) împotriva hiperplaziei și riscului de cancer"},
+            {"Are efect calmant", "îmbunătățește somnul și echilibrul emoțional"}
           ]}
-          forms={gettext("Capsule orale, gel, ovule vaginale")}
+          role="Important: forma bioidentică micronizată, nu derivatul sintetic (progestativele clasice)"
+          forms={gettext("Capsule orale")}
           forms_bg="bg-purple-100"
           forms_text_color="text-purple-700"
           forms_title_color="text-purple-800"
         />
+      </div>
 
-        <.hormone_card
-          emoji="💪"
-          title={gettext("Testosteron Bioidentic")}
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <.detailed_hormone_card
+          emoji="🔹"
+          title="Testosteron bioidentic"
           bg_color="bg-orange-50"
-          border_color="border-orange-100"
+          border_color="border-orange-200"
           title_color="text-orange-800"
-          types={gettext("Doze mici pentru echilibrul hormonal")}
-          benefits={[
-            gettext("Creșterea libidoului"),
-            gettext("Îmbunătățirea energiei"),
-            gettext("Menținerea masei musculare"),
-            gettext("Îmbunătățirea dispoziției"),
-            gettext("Creșterea densității osoase")
+          types={[
+            {"Da, și femeile au nevoie de testosteron", "dar în doze mult mai mici decât bărbații"},
+            {"Poate fi folosit pentru",
+             "scăderea oboselii, creșterea libidoului, îmbunătățirea masei musculare și a densității osoase"}
           ]}
-          forms={gettext("Gel, creme, pellete subcutanate")}
+          role="Se administrează doar cu monitorizare atentă, pentru a evita efectele secundare (exces de păr, acnee, îngroșarea vocii)"
+          forms={gettext("Gel, creme")}
           forms_bg="bg-orange-100"
           forms_text_color="text-orange-700"
           forms_title_color="text-orange-800"
+        />
+
+        <.detailed_hormone_card
+          emoji="🔹"
+          title="DHEA (dehidroepiandrosteron)"
+          bg_color="bg-green-50"
+          border_color="border-green-200"
+          title_color="text-green-800"
+          types={[
+            {"Un precursor hormonal produs de glandele suprarenale",
+             "care poate fi transformat în estrogen și testosteron în organism"},
+            {"Util pentru", "energie, vitalitate, memorie și funcție sexuală"}
+          ]}
+          role=""
+          forms="Ovule"
+          forms_bg="bg-green-100"
+          forms_text_color="text-green-700"
+          forms_title_color="text-green-800"
+        />
+
+        <.detailed_hormone_card
+          emoji="🔹"
+          title="Melatonina"
+          bg_color="bg-indigo-50"
+          border_color="border-indigo-200"
+          title_color="text-indigo-800"
+          types={[
+            {"Nu este un hormon sexual",
+             "dar uneori e inclusă în BHRT pentru reglarea somnului și a ritmului circadian"}
+          ]}
+          role=""
+          forms="Capsule, tablete cu eliberare prelungită"
+          forms_bg="bg-indigo-100"
+          forms_text_color="text-indigo-700"
+          forms_title_color="text-indigo-800"
         />
       </div>
     </div>
@@ -150,52 +192,48 @@ defmodule CmenWeb.BhrtSectionComponent do
       <h3 class="text-2xl font-bold text-gray-900 text-center mb-12">
         {gettext("Procesul de Tratament BHRT")}
       </h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <.process_step
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <.detailed_process_step
           step="1"
-          title={gettext("Evaluare Inițială Comprehensivă")}
+          title="Consultația inițială"
           bg_color="from-blue-500 to-blue-600"
           items={[
-            gettext("Anamneza medicală detaliată"),
-            gettext("Evaluarea simptomelor curente"),
-            gettext("Examen fizic complet"),
-            gettext("Analiza istoricului familial")
+            "Discuție detaliată cu medicul specialist",
+            "Se evaluează: istoricul medical, simptomele, stilul de viață, istoricul familial (boli cardiovasculare, cancer, osteoporoză etc.)",
+            "Se discută așteptările pacientei și beneficiile vs. riscurile BHRT",
+            "Analize de sânge pentru hormoni (estradiol, progesteron, testosteron, testosteron liber, FSH, LH, DHEA-S, cortizol, tiroidieni etc)",
+            "Analize generale (profil lipidic, glicemie, funcție hepatică, funcție renală etc.)",
+            "Ecografie transvaginală și mamară / mamografie (în funcție de vârstă și recomandări)",
+            "Alte investigații personalizate (DEXA pentru densitate osoasă, evaluare cardiologică)"
           ]}
         />
 
-        <.process_step
+        <.detailed_process_step
           step="2"
-          title={gettext("Analize Hormonale Complete")}
-          bg_color="from-green-500 to-green-600"
-          items={[
-            gettext("Estradiol, Progesterone, Testosterone"),
-            gettext("FSH, LH pentru confirmarea menopauzei"),
-            gettext("Hormoni tiroidieni (TSH, T3, T4)"),
-            gettext("Cortizol, DHEA-S, Insulin")
-          ]}
-        />
-
-        <.process_step
-          step="3"
-          title={gettext("Personalizarea Tratamentului")}
+          title="Stabilirea planului personalizat de tratament"
           bg_color="from-purple-500 to-purple-600"
           items={[
-            gettext("Interpretarea rezultatelor analizelor"),
-            gettext("Stabilirea dozajelor personalizate"),
-            gettext("Alegerea formei de administrare"),
-            gettext("Planul de monitorizare")
+            "Pe baza rezultatelor și simptomelor, medicul elaborează o schemă de tratament",
+            "Alegerea hormonilor necesari (estrogen, progesteron, testosteron, DHEA etc.)",
+            "Stabilirea formei de administrare: geluri, creme transdermice, capsule micronizate, ovule sau plasturi",
+            "Explicarea modului de utilizare și a eventualelor efecte secundare",
+            "Pacienta începe terapia conform schemei personalizate",
+            "Primele săptămâni sunt de adaptare, pot exista mici variații de simptome",
+            "Este esențial ca pacienta să noteze schimbările observate (somn, bufeuri, energie, dispoziție)"
           ]}
         />
 
-        <.process_step
-          step="4"
-          title={gettext("Monitorizare și Ajustări")}
+        <.detailed_process_step
+          step="3"
+          title="Monitorizare periodică"
           bg_color="from-pink-500 to-pink-600"
           items={[
-            gettext("Control la 6-8 săptămâni"),
-            gettext("Analize de monitorizare la 3 luni"),
-            gettext("Ajustări dozaj după necesități"),
-            gettext("Controale regulate la 6 luni")
+            "Control lunar, la 4-6 săptămâni după inițiere pentru a ajusta dozele",
+            "Ulterior, controale la fiecare 3–6 luni, cu repetarea analizelor hormonale și a investigațiilor imagistice, dacă e cazul",
+            "Ajustarea dozelor până la atingerea echilibrului optim (simptome reduse + analize în parametri)",
+            "Tratamentul nu este identic pentru toată viața – dozele se ajustează în funcție de vârstă, analize și evoluția clinică",
+            "Integrarea BHRT cu nutriție echilibrată, sport, suplimente recomandate, reducerea stresului și screening regulat",
+            "Obiectivul nu este doar ameliorarea simptomelor, ci și longevitatea sănătoasă: prevenirea osteoporozei, bolilor cardiovasculare și cognitive"
           ]}
         />
       </div>
@@ -209,29 +247,60 @@ defmodule CmenWeb.BhrtSectionComponent do
       <h3 class="text-2xl font-bold text-gray-900 text-center mb-12">
         {gettext("Forme de Administrare BHRT")}
       </h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <.administration_card
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <.detailed_administration_card
           emoji="💊"
-          title={gettext("Capsule Orale")}
-          advantages={gettext("Convenabile, dozaj precis")}
-          disadvantages={gettext("Metabolism hepatic")}
-          ideal_for={gettext("Progesterone")}
+          title="Capsule (progesteron micronizat, melatonină)"
+          advantages="dozaj precis, administrare simplă"
+          ideal_for="femei care au nevoie de progesteron pentru protecția endometrului și somn odihnitor"
+          bg_color="bg-blue-50"
+          border_color="border-blue-200"
+          title_color="text-blue-800"
+          advantage_color="text-blue-600"
         />
 
-        <.administration_card
+        <.detailed_administration_card
           emoji="🧴"
-          title={gettext("Geluri și Creme")}
-          advantages={gettext("Absorbție directă, evită ficatul")}
-          disadvantages={gettext("Aplicare zilnică")}
-          ideal_for={gettext("Estrogen, Testosterone")}
+          title="Creme și geluri transdermice (estrogen, progesteron, testosteron)"
+          advantages="absorbție rapidă, evită ficatul, efecte mai blânde și stabile"
+          ideal_for="paciente cu probleme hepatice/digestive sau care preferă aplicarea locală"
+          bg_color="bg-green-50"
+          border_color="border-green-200"
+          title_color="text-green-800"
+          advantage_color="text-green-600"
         />
 
-        <.administration_card
+        <.detailed_administration_card
           emoji="🏥"
-          title={gettext("Plasturi Transdermice")}
-          advantages={gettext("Eliberare constantă, convenabile")}
-          disadvantages={gettext("Posibile iritații locale")}
-          ideal_for={gettext("Estrogen")}
+          title="Plasturi transdermici (estrogen, combinații)"
+          advantages="eliberare constantă, aplicare 1–2 ori/săptămână, comod"
+          ideal_for="femei care vor stabilitate hormonală și nu doresc administrare zilnică"
+          bg_color="bg-purple-50"
+          border_color="border-purple-200"
+          title_color="text-purple-800"
+          advantage_color="text-purple-600"
+        />
+
+        <.detailed_administration_card
+          emoji="🌸"
+          title="Ovule vaginale (estriol, DHEA)"
+          advantages="acțiune locală directă, reduc uscăciunea și atrofia vaginală"
+          ideal_for="femei cu simptome genito-urinare (disconfort intim, durere la contact)"
+          bg_color="bg-pink-50"
+          border_color="border-pink-200"
+          title_color="text-pink-800"
+          advantage_color="text-pink-600"
+        />
+
+        <.detailed_administration_card
+          emoji="💨"
+          title="Spray nazal/sublingual (oxitocină)"
+          advantages="efect rapid asupra dispoziției și conexiunii emoționale"
+          ideal_for="femei cu anxietate, scădere a dorinței sexuale sau dificultăți în relaxare/afecțiune"
+          bg_color="bg-orange-50"
+          border_color="border-orange-200"
+          title_color="text-orange-800"
+          advantage_color="text-orange-600"
         />
       </div>
     </div>
@@ -245,55 +314,67 @@ defmodule CmenWeb.BhrtSectionComponent do
         {gettext("Siguranța și Contraindicațiile BHRT")}
       </h3>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <.safety_card
+        <.detailed_safety_card
           emoji="✅"
-          title={gettext("Candidați Ideali pentru BHRT")}
+          title="Candidați Ideali pentru BHRT"
           bg_color="bg-green-50"
           border_color="border-green-200"
           title_color="text-green-800"
           items={[
-            gettext("Femei în peri/menopauză cu simptome"),
-            gettext("Dorința pentru tratament natural"),
-            gettext("Lipsa contraindicațiilor majore"),
-            gettext("Angajament pentru monitorizare regulată")
+            "Femei aflate în perimenopauză sau menopauză cu simptome moderate–severe (bufeuri, insomnie, schimbări de dispoziție, uscăciune vaginală)",
+            "Paciente cu risc crescut de osteoporoză sau pierdere de masă osoasă",
+            "Femei care doresc să-și mențină calitatea vieții și sănătatea pe termen lung (sistem cardiovascular, piele, creier)",
+            "Persoane care preferă o alternativă bioidentică, mai bine tolerată decât hormonii sintetici"
           ]}
           item_color="text-green-700"
           bullet_color="text-green-500"
         />
 
-        <.safety_card
+        <.detailed_safety_card
           emoji="⚠️"
-          title={gettext("Contraindicații și Precauții")}
+          title="Contraindicații și Precauții"
           bg_color="bg-red-50"
           border_color="border-red-200"
           title_color="text-red-800"
+          subtitle="BHRT NU este recomandată în următoarele situații:"
           items={[
-            gettext("Istoric de cancer hormono-dependent"),
-            gettext("Boli hepatice severe active"),
-            gettext("Tromboembolism verios netratat"),
-            gettext("Sângerări vaginale neexplicate"),
-            gettext("Sarcină și alăptarea")
+            "Cancer mamar sau uterin activ/antecedente recente",
+            "Tromboembolism venos sau accident vascular cerebral în antecedente",
+            "Afecțiuni hepatice severe",
+            "Sângerări vaginale neexplicate",
+            "Sarcină sau alăptare"
           ]}
+          warning="Precauție: femeile cu istoric familial de cancer mamar, boli cardiovasculare sau factori de risc multipli pot beneficia de BHRT doar după evaluare și monitorizare strictă"
           item_color="text-red-700"
           bullet_color="text-red-500"
         />
 
-        <.safety_card
+        <.detailed_safety_card
           emoji="🔍"
-          title={gettext("Monitorizare Necesară")}
+          title="Monitorizare Necesară"
           bg_color="bg-blue-50"
           border_color="border-blue-200"
           title_color="text-blue-800"
+          subtitle="Pentru a asigura eficiență și siguranță, BHRT necesită:"
           items={[
-            gettext("Analize hormonale regulate"),
-            gettext("Controale ginecologice anuale"),
-            gettext("Mamografie anuală"),
-            gettext("Monitorizarea tensiunii arteriale"),
-            gettext("Teste funcții hepatice")
+            "Analize de sânge hormonale și metabolice (estradiol, progesteron, testosteron, DHEA-S, profil lipidic, funcție hepatică/renală etc.) – inițial și apoi periodic",
+            "Ecografie transvaginală pentru monitorizarea endometrului",
+            "Screening mamar (ecografie sau mamografie, în funcție de vârstă)",
+            "Consultații regulate (la 4-8 săptămâni după inițiere, apoi la 3–6 luni)",
+            "Ajustarea dozelor în funcție de simptome și rezultate"
           ]}
           item_color="text-blue-700"
           bullet_color="text-blue-500"
         />
+      </div>
+      
+      <div class="mt-12 text-center">
+        <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 max-w-4xl mx-auto">
+          <p class="text-lg text-gray-800 leading-relaxed flex items-center justify-center">
+            <span class="text-2xl mr-3">✅</span>
+            <span>BHRT este considerată sigură atunci când este corect indicată și atent monitorizată. Nu există „o schemă universală", ci un tratament personalizat, adaptat la fiecare femeie.</span>
+          </p>
+        </div>
       </div>
     </div>
     """
@@ -343,6 +424,54 @@ defmodule CmenWeb.BhrtSectionComponent do
   attr :bg_color, :string, required: true
   attr :border_color, :string, required: true
   attr :title_color, :string, required: true
+  attr :types, :list, required: true
+  attr :role, :string, required: true
+  attr :forms, :string, required: true
+  attr :forms_bg, :string, required: true
+  attr :forms_text_color, :string, required: true
+  attr :forms_title_color, :string, required: true
+
+  defp detailed_hormone_card(assigns) do
+    ~H"""
+    <div class={"#{@bg_color} rounded-xl p-8 border #{@border_color}"}>
+      <div class="flex items-center mb-6">
+        <span class="text-2xl mr-3">{@emoji}</span>
+        <h4 class={"text-xl font-bold #{@title_color}"}>{@title}</h4>
+      </div>
+
+      <div class="mb-6">
+        <%= for {hormone_name, description} <- @types do %>
+          <div class="mb-4">
+            <p class={"text-sm #{@title_color} font-semibold mb-1"}>
+              • {hormone_name}
+            </p>
+            <p class="text-sm text-gray-600 pl-4">
+              {description}
+            </p>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="mb-4">
+        <p class={"text-sm #{@title_color} font-semibold mb-2"}>👉 Rol:</p>
+        <p class="text-sm text-gray-600">{@role}</p>
+      </div>
+
+      <div class={"#{@forms_bg} rounded-lg p-3"}>
+        <p class={"text-sm #{@forms_title_color} font-semibold mb-1"}>
+          {gettext("Forme disponibile:")}
+        </p>
+        <p class={"text-sm #{@forms_text_color}"}>{@forms}</p>
+      </div>
+    </div>
+    """
+  end
+
+  attr :emoji, :string, required: true
+  attr :title, :string, required: true
+  attr :bg_color, :string, required: true
+  attr :border_color, :string, required: true
+  attr :title_color, :string, required: true
   attr :types, :string, required: true
   attr :benefits, :list, required: true
   attr :forms, :string, required: true
@@ -350,7 +479,7 @@ defmodule CmenWeb.BhrtSectionComponent do
   attr :forms_text_color, :string, required: true
   attr :forms_title_color, :string, required: true
 
-  defp hormone_card(assigns) do
+  defp basic_hormone_card(assigns) do
     ~H"""
     <div class={"#{@bg_color} rounded-xl p-8 border #{@border_color}"}>
       <div class="flex items-center mb-6">
@@ -413,6 +542,64 @@ defmodule CmenWeb.BhrtSectionComponent do
     """
   end
 
+  attr :step, :string, required: true
+  attr :title, :string, required: true
+  attr :bg_color, :string, required: true
+  attr :items, :list, required: true
+
+  defp detailed_process_step(assigns) do
+    ~H"""
+    <div class="relative h-full">
+      <div class={"bg-gradient-to-br #{@bg_color} text-white rounded-xl p-8 h-full flex flex-col"}>
+        <div class="text-center mb-6">
+          <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl font-bold">{@step}</span>
+          </div>
+          <h4 class="text-xl font-semibold mb-4">{@title}</h4>
+        </div>
+        <ul class="text-sm space-y-3 leading-relaxed flex-grow">
+          <%= for item <- @items do %>
+            <li class="flex items-start">
+              <span class="text-white mr-3 mt-1 flex-shrink-0">•</span>
+              <span>{item}</span>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    """
+  end
+
+  attr :emoji, :string, required: true
+  attr :title, :string, required: true
+  attr :advantages, :string, required: true
+  attr :ideal_for, :string, required: true
+  attr :bg_color, :string, required: true
+  attr :border_color, :string, required: true
+  attr :title_color, :string, required: true
+  attr :advantage_color, :string, required: true
+
+  defp detailed_administration_card(assigns) do
+    ~H"""
+    <div class={"#{@bg_color} border #{@border_color} rounded-xl p-6 h-full flex flex-col hover:shadow-lg transition-shadow"}>
+      <div class="text-center mb-6">
+        <span class="text-4xl mb-3 block">{@emoji}</span>
+        <h4 class={"text-lg font-semibold #{@title_color} leading-tight"}>{@title}</h4>
+      </div>
+      <div class="space-y-4 text-sm flex-grow">
+        <div>
+          <p class={"font-semibold #{@advantage_color} mb-2"}>Avantaje:</p>
+          <p class="text-gray-700">{@advantages}</p>
+        </div>
+        <div>
+          <p class={"font-semibold #{@advantage_color} mb-2"}>Ideal pentru:</p>
+          <p class="text-gray-700">{@ideal_for}</p>
+        </div>
+      </div>
+    </div>
+    """
+  end
+
   attr :emoji, :string, required: true
   attr :title, :string, required: true
   attr :advantages, :string, required: true
@@ -431,6 +618,51 @@ defmodule CmenWeb.BhrtSectionComponent do
         <p><strong class="text-orange-600">{gettext("Dezavantaje:")}</strong> {@disadvantages}</p>
         <p><strong class="text-blue-600">{gettext("Ideal pentru:")}</strong> {@ideal_for}</p>
       </div>
+    </div>
+    """
+  end
+
+  attr :emoji, :string, required: true
+  attr :title, :string, required: true
+  attr :bg_color, :string, required: true
+  attr :border_color, :string, required: true
+  attr :title_color, :string, required: true
+  attr :items, :list, required: true
+  attr :item_color, :string, required: true
+  attr :bullet_color, :string, required: true
+  attr :subtitle, :string, default: nil
+  attr :warning, :string, default: nil
+
+  defp detailed_safety_card(assigns) do
+    ~H"""
+    <div class={"#{@bg_color} rounded-xl p-8 border #{@border_color} h-full flex flex-col"}>
+      <div class="flex items-center mb-6">
+        <span class="text-3xl mr-3">{@emoji}</span>
+        <h4 class={"text-xl font-bold #{@title_color}"}>{@title}</h4>
+      </div>
+
+      <%= if @subtitle do %>
+        <div class="mb-4">
+          <p class={"text-sm font-semibold #{@title_color}"}>{@subtitle}</p>
+        </div>
+      <% end %>
+
+      <ul class={"space-y-3 #{@item_color} flex-grow"}>
+        <%= for item <- @items do %>
+          <li class="flex items-start">
+            <span class={"#{@bullet_color} mr-3 mt-1 flex-shrink-0"}>•</span>
+            <span class="text-sm leading-relaxed">{item}</span>
+          </li>
+        <% end %>
+      </ul>
+
+      <%= if @warning do %>
+        <div class="mt-6 p-4 bg-white bg-opacity-50 rounded-lg border border-current border-opacity-20">
+          <p class={"text-sm #{@title_color} font-semibold"}>
+            👉 {@warning}
+          </p>
+        </div>
+      <% end %>
     </div>
     """
   end

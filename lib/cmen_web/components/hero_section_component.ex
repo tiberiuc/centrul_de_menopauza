@@ -13,7 +13,7 @@ defmodule CmenWeb.HeroSectionComponent do
               {gettext("Primul centru din Brașov dedicat menopauzei și sănătății feminine")}
             </h1>
             <p class="mt-6 text-xl text-gray-600 leading-relaxed">
-              {gettext("echilibru, sănătate și încredere pentru fiecare femeie.")}
+              {gettext("Fondat în 2023 - un loc în care femeile își găsesc echilibrul, încrederea și vitalitatea")}
             </p>
             <div class="mt-8 flex flex-col sm:flex-row gap-4">
               <button
@@ -33,7 +33,7 @@ defmodule CmenWeb.HeroSectionComponent do
             </div>
           </div>
           <div class="relative flex justify-center items-center p-12">
-            <div class="w-96 h-96 rounded-full overflow-hidden shadow-2xl bg-white p-8">
+            <div class="w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden shadow-2xl bg-white p-8">
               <div class="w-full h-full overflow-hidden">
                 <img
                   src="/images/centrul-de-menopauza.jpeg"

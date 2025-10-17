@@ -47,8 +47,7 @@ defmodule CmenWeb.BhrtSectionComponent do
 
         <div class="mb-8">
           <h4 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
-            <span class="mr-3">✅</span>
-            Beneficiile BHRT
+            <span class="mr-3">✅</span> Beneficiile BHRT
           </h4>
         </div>
 
@@ -99,7 +98,7 @@ defmodule CmenWeb.BhrtSectionComponent do
         </h4>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
         <.detailed_hormone_card
           emoji="🔹"
           title="Estrogenii bioidentici"
@@ -113,7 +112,7 @@ defmodule CmenWeb.BhrtSectionComponent do
              "considerat mai blând, utilizat mai ales pentru sănătatea vaginală și prevenirea uscăciunii/atrofiei"}
           ]}
           role="reduc bufeurile, transpirațiile nocturne, insomniile, previn osteoporoza, mențin sănătatea cardiovasculară și a pielii"
-          forms={gettext("Gel, plasturi, ovule vaginale")}
+          forms={gettext("Crema, Gel, plasturi, ovule vaginale")}
           forms_bg="bg-pink-100"
           forms_text_color="text-pink-700"
           forms_title_color="text-pink-800"
@@ -122,7 +121,7 @@ defmodule CmenWeb.BhrtSectionComponent do
         <.detailed_hormone_card
           emoji="🔹"
           title="Progesteron bioidentic (micronizat)"
-          bg_color="bg-purple-50"
+          bg_color="bg-pink-50"
           border_color="border-purple-200"
           title_color="text-purple-800"
           types={[
@@ -131,7 +130,26 @@ defmodule CmenWeb.BhrtSectionComponent do
             {"Are efect calmant", "îmbunătățește somnul și echilibrul emoțional"}
           ]}
           role="Important: forma bioidentică micronizată, nu derivatul sintetic (progestativele clasice)"
-          forms={gettext("Capsule orale")}
+          forms={gettext("Capsule orale, ovule vaginale, crema")}
+          forms_bg="bg-pink-100"
+          forms_text_color="text-purple-700"
+          forms_title_color="text-purple-800"
+        />
+        <.detailed_hormone_card
+          emoji="🔹"
+          title="Pregnenolona"
+          bg_color="bg-purple-50"
+          border_color="border-purple-200"
+          title_color="text-purple-800"
+          types={[
+            {"Este considerată „mama tuturor hormonilor”, deoarece din ea se formează progesteronul, estrogenii, testosteronul și cortizolul",
+             ""},
+            {"Poate fi folosită pentru",
+             "îmbunătățirea memoriei, clarității mentale, somnului, echilibrului emoțional și energiei generale"}
+          ]}
+          role="Susține funcția creierului și echilibrul hormonal, fiind utilă mai ales în perioadele de stres cronic sau oboseală accentuată
+    Se administrează doar după evaluare hormonală, pentru a evita dezechilibrele hormonale secundare"
+          forms={gettext("Capsule orale, crema")}
           forms_bg="bg-purple-100"
           forms_text_color="text-purple-700"
           forms_title_color="text-purple-800"
@@ -151,7 +169,7 @@ defmodule CmenWeb.BhrtSectionComponent do
              "scăderea oboselii, creșterea libidoului, îmbunătățirea masei musculare și a densității osoase"}
           ]}
           role="Se administrează doar cu monitorizare atentă, pentru a evita efectele secundare (exces de păr, acnee, îngroșarea vocii)"
-          forms={gettext("Gel, creme")}
+          forms={gettext("Gel, creme, ovule")}
           forms_bg="bg-orange-100"
           forms_text_color="text-orange-700"
           forms_title_color="text-orange-800"
@@ -169,7 +187,7 @@ defmodule CmenWeb.BhrtSectionComponent do
             {"Util pentru", "energie, vitalitate, memorie și funcție sexuală"}
           ]}
           role=""
-          forms="Ovule"
+          forms="Ovule, capsule"
           forms_bg="bg-green-100"
           forms_text_color="text-green-700"
           forms_title_color="text-green-800"
@@ -186,7 +204,7 @@ defmodule CmenWeb.BhrtSectionComponent do
              "dar uneori e inclusă în BHRT pentru reglarea somnului și a ritmului circadian"}
           ]}
           role=""
-          forms="Capsule, tablete cu eliberare prelungită"
+          forms="Capsule, TROCHE"
           forms_bg="bg-indigo-100"
           forms_text_color="text-indigo-700"
           forms_title_color="text-indigo-800"
@@ -260,7 +278,7 @@ defmodule CmenWeb.BhrtSectionComponent do
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <.detailed_administration_card
           emoji="💊"
-          title="Capsule (progesteron micronizat, melatonină)"
+          title="Capsule (progesteron micronizat, melatonină, DHEA, pregnenolona)"
           advantages="dozaj precis, administrare simplă"
           ideal_for="femei care au nevoie de progesteron pentru protecția endometrului și somn odihnitor"
           bg_color="bg-blue-50"
@@ -293,7 +311,7 @@ defmodule CmenWeb.BhrtSectionComponent do
 
         <.detailed_administration_card
           emoji="🌸"
-          title="Ovule vaginale (estriol, DHEA)"
+          title="Ovule vaginale (estriol, estradiol, testosteron, DHEA)"
           advantages="acțiune locală directă, reduc uscăciunea și atrofia vaginală"
           ideal_for="femei cu simptome genito-urinare (disconfort intim, durere la contact)"
           bg_color="bg-pink-50"
@@ -349,12 +367,11 @@ defmodule CmenWeb.BhrtSectionComponent do
           subtitle="BHRT NU este recomandată în următoarele situații:"
           items={[
             "Cancer mamar sau uterin activ/antecedente recente",
-            "Tromboembolism venos sau accident vascular cerebral în antecedente",
             "Afecțiuni hepatice severe",
             "Sângerări vaginale neexplicate",
             "Sarcină sau alăptare"
           ]}
-          warning="Precauție: femeile cu istoric familial de cancer mamar, boli cardiovasculare sau factori de risc multipli pot beneficia de BHRT doar după evaluare și monitorizare strictă"
+          warning="Precauție: femeile cu istoric familial de cancer mamar, tromboembolism venos sau accident vascular cerebral în antecedente, boli cardiovasculare sau factori de risc multipli pot beneficia de BHRT doar după evaluare și monitorizare strictă"
           item_color="text-red-700"
           bullet_color="text-red-500"
         />
@@ -377,12 +394,14 @@ defmodule CmenWeb.BhrtSectionComponent do
           bullet_color="text-blue-500"
         />
       </div>
-      
+
       <div class="mt-12 text-center">
         <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 max-w-4xl mx-auto">
           <p class="text-lg text-gray-800 leading-relaxed flex items-center justify-center">
             <span class="text-2xl mr-3">✅</span>
-            <span>BHRT este considerată sigură atunci când este corect indicată și atent monitorizată. Nu există „o schemă universală", ci un tratament personalizat, adaptat la fiecare femeie.</span>
+            <span>
+              BHRT este considerată sigură atunci când este corect indicată și atent monitorizată. Nu există „o schemă universală", ci un tratament personalizat, adaptat la fiecare femeie.
+            </span>
           </p>
         </div>
       </div>

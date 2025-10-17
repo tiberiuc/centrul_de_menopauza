@@ -16,7 +16,11 @@ defmodule CmenWeb.NavigationComponent do
             <h1 class="text-xl font-bold text-pink-600">
               {gettext("Centrul de Menopauză")}
             </h1>
-            <img src="/images/aesthetic-lab-logo.png" alt="Aesthetic Lab" class="h-8" />
+            <div>
+              <span class="text-base font-semibold text-black" style="font-family: 'Cormorant Garamond', serif;">
+                AESTHETIC LAB
+              </span>
+            </div>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-8">

@@ -7,7 +7,8 @@ defmodule CmenWeb.HomeLive do
      assign(socket,
        active_menopause_section: "perimenopauza",
        mobile_menu_open: false,
-       form_data: %{}
+       form_data: %{},
+       notification: nil
      )}
   end
 
@@ -38,9 +39,11 @@ defmodule CmenWeb.HomeLive do
       {:ok, _} ->
         socket =
           socket
-          |> put_flash(
-            :info,
-            gettext("Mesajul dvs. a fost trimis cu succes! Vă vom contacta în curând.")
+          |> assign(
+            notification: %{
+              type: :info,
+              message: gettext("Mesajul dvs. a fost trimis cu succes! Vă vom contacta în curând.")
+            }
           )
           |> assign(form_data: %{})
           |> push_event("reset-form", %{})
@@ -50,13 +53,21 @@ defmodule CmenWeb.HomeLive do
       {:error, _reason} ->
         socket =
           socket
-          |> put_flash(
-            :error,
-            gettext("A apărut o eroare la trimiterea mesajului. Vă rugăm să încercați din nou.")
+          |> assign(
+            notification: %{
+              type: :error,
+              message:
+                gettext("A apărut o eroare la trimiterea mesajului. Vă rugăm să încercați din nou.")
+            }
           )
           |> assign(form_data: params)
 
         {:noreply, socket}
     end
+  end
+
+  @impl true
+  def handle_event("clear_notification", _params, socket) do
+    {:noreply, assign(socket, notification: nil)}
   end
 end

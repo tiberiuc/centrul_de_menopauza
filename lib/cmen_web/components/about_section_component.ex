@@ -23,27 +23,27 @@ defmodule CmenWeb.AboutSectionComponent do
                 Misiunea noastră este să oferim fiecărei femei echilibru, vitalitate și încredere în această etapă importantă a vieții.
               </p>
             </div>
-            
+
             <div class="mb-8">
               <h4 class="text-xl font-semibold text-gray-900 mb-6">
                 La noi, fiecare pacientă beneficiază de:
               </h4>
               <div class="space-y-4">
-                <.detailed_feature_item 
-                  emoji="👩‍⚕️" 
-                  text="Echipă de specialiști acreditați internațional în managementul menopauzei și terapia de substituție hormonală, mereu conectați la cele mai noi ghiduri și studii medicale." 
+                <.detailed_feature_item
+                  emoji="👩‍⚕️"
+                  text="Echipă de specialiști acreditați internațional în managementul menopauzei și terapia de substituție hormonală, mereu conectați la cele mai noi ghiduri și studii medicale."
                 />
-                <.detailed_feature_item 
-                  emoji="🧬" 
-                  text="Abordare integrată – de la consultații și analize complete până la terapii hormonale bioidentice (BHRT) și programe de prevenție pe termen lung." 
+                <.detailed_feature_item
+                  emoji="🧬"
+                  text="Abordare integrată – de la consultații și analize complete până la terapii hormonale bioidentice (BHRT) și programe de prevenție pe termen lung."
                 />
-                <.detailed_feature_item 
-                  emoji="🌿" 
-                  text="Tratamente moderne și sigure, adaptate nevoilor individuale." 
+                <.detailed_feature_item
+                  emoji="🌿"
+                  text="Tratamente moderne și sigure, adaptate nevoilor individuale."
                 />
-                <.detailed_feature_item 
-                  emoji="💖" 
-                  text="Suport constant, pentru ca fiecare femeie să se simtă înțeleasă, ascultată și susținută." 
+                <.detailed_feature_item
+                  emoji="💖"
+                  text="Suport constant, pentru ca fiecare femeie să se simtă înțeleasă, ascultată și susținută."
                 />
               </div>
             </div>
@@ -51,7 +51,9 @@ defmodule CmenWeb.AboutSectionComponent do
             <div class="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
               <p class="text-blue-800 font-medium flex items-start">
                 <span class="mr-3 text-lg">👉</span>
-                <span>Misiunea noastră este să transformăm experiența menopauzei într-o etapă de echilibru, vitalitate și încredere.</span>
+                <span>
+                  Misiunea noastră este să transformăm experiența menopauzei într-o etapă de echilibru, vitalitate și încredere.
+                </span>
               </p>
             </div>
           </div>
@@ -65,7 +67,7 @@ defmodule CmenWeb.AboutSectionComponent do
               specialty={gettext("Medic Primar Obstetrică-Ginecologie")}
               description={
                 gettext(
-                  "Specializată în tratamente perimenopauzale, menopauzale și postmenopauzale. Abordare profesională, empatică și personalizată pentru fiecare pacientă."
+                  "Specialist acreditat international in terapia de substitutie hormonala bioidentica in perimenopauza, menopauza si postmenopauza. Experienta sa vasta, abilitatile profesionale si abordarea sa empatica, asigura pacientele ca primesc o atentie personalizata si o ingrijire medicala de inalta calitate"
                 )
               }
               image_src="/images/dr-ioana-vasile.jpg"

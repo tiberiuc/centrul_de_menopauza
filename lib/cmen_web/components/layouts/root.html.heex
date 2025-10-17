@@ -3,9 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <.live_title default="Centrul de menopauza">
+    <.live_title default="Centrul de Menopauză Brașov | Aesthetic Lab Health Care">
       {assigns[:page_title]}
     </.live_title>
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Primul centru din Brașov dedicat menopauzei și sănătății feminine. Fondat în 2023 - un loc în care femeile își găsesc echilibrul, încrederea și vitalitatea. Terapie BHRT, consultații personalizate și tratamente pentru menopauză."
+    />
+    <meta
+      name="keywords"
+      content="menopauză, menopauza, centru menopauză Brașov, sănătate feminină, BHRT, terapie hormonală, perimenopauză, simptome menopauză, tratament menopauză, bufeuri, Aesthetic Lab, health care"
+    />
+    <meta name="author" content="Aesthetic Lab Health Care" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.centruldemenopauza.ro" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.centruldemenopauza.ro" />
+    <meta
+      property="og:title"
+      content="Centrul de Menopauză Brașov | Aesthetic Lab Health Care"
+    />
+    <meta
+      property="og:description"
+      content="Primul centru din Brașov dedicat menopauzei și sănătății feminine. Fondat în 2023 - un loc în care femeile își găsesc echilibrul, încrederea și vitalitatea."
+    />
+    <meta property="og:image" content="https://www.centruldemenopauza.ro/images/centrul-de-menopauza.jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ro_RO" />
+    <meta property="og:site_name" content="Centrul de Menopauză Brașov" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.centruldemenopauza.ro" />
+    <meta
+      name="twitter:title"
+      content="Centrul de Menopauză Brașov | Aesthetic Lab Health Care"
+    />
+    <meta
+      name="twitter:description"
+      content="Primul centru din Brașov dedicat menopauzei și sănătății feminine. Fondat în 2023 - un loc în care femeile își găsesc echilibrul, încrederea și vitalitatea."
+    />
+    <meta name="twitter:image" content="https://www.centruldemenopauza.ro/images/centrul-de-menopauza.jpeg" />
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="RO-BV" />
+    <meta name="geo.placename" content="Brașov" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +57,114 @@
     />
     <link phx-track-static rel="stylesheet" href={~p"/assets/css/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/js/app.js"}>
+    </script>
+    <!-- JSON-LD Structured Data for Google & AI -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "@id": "https://www.centruldemenopauza.ro",
+        "name": "Centrul de Menopauză Brașov - Aesthetic Lab Health Care",
+        "description": "Primul centru din Brașov dedicat menopauzei și sănătății feminine. Fondat în 2023 - un loc în care femeile își găsesc echilibrul, încrederea și vitalitatea.",
+        "url": "https://www.centruldemenopauza.ro",
+        "logo": "https://www.centruldemenopauza.ro/images/centrul-de-menopauza.jpeg",
+        "image": "https://www.centruldemenopauza.ro/images/centrul-de-menopauza.jpeg",
+        "foundingDate": "2023",
+        "medicalSpecialty": ["Gynecology", "Endocrinology", "Women's Health"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Brașov",
+          "addressRegion": "Brașov",
+          "addressCountry": "RO"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Brașov"
+        },
+        "availableLanguage": ["ro"],
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.facebook.com/centruldemenopauza",
+          "https://www.instagram.com/centruldemenopauza"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicii Menopauză",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Consultație Menopauză",
+                "description": "Consultație detaliată pentru gestionarea simptomelor menopauzei"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalTherapy",
+                "name": "Terapie BHRT",
+                "description": "Terapie hormonală bioidentică pentru echilibrarea hormonilor"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Evaluare Simptome Perimenopauză",
+                "description": "Evaluare completă a simptomelor de perimenopauză și recomandări personalizate"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Centrul de Menopauză Brașov",
+        "url": "https://www.centruldemenopauza.ro",
+        "description": "Primul centru din Brașov dedicat menopauzei și sănătății feminine",
+        "inLanguage": "ro",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Aesthetic Lab Health Care",
+          "foundingDate": "2023"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ce este menopauza?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Menopauza este o etapă naturală în viața fiecărei femei, marcând încetarea ciclurilor menstruale. Apare de obicei între 45-55 de ani și este diagnosticată după 12 luni consecutive fără menstruație."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ce este terapia BHRT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BHRT (Bio-Identical Hormone Replacement Therapy) este o terapie hormonală care folosește hormoni bioidentici pentru a echilibra nivelurile hormonale în timpul menopauzei, ajutând la reducerea simptomelor și îmbunătățirea calității vieții."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Care sunt simptomele menopauzei?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simptomele comune includ bufeuri, transpirații nocturne, tulburări de somn, modificări de dispoziție, uscăciunea vaginală, scăderea libidoului și modificări ale pielii și părului."
+            }
+          }
+        ]
+      }
     </script>
     <script>
       (() => {

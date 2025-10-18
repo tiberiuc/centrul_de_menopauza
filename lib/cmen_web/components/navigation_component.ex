@@ -13,11 +13,14 @@ defmodule CmenWeb.NavigationComponent do
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <div class="flex items-center space-x-3">
-            <h1 class="text-xl font-bold text-pink-600">
+            <h1 class="text-sm md:text-xl font-bold text-pink-600">
               {gettext("Centrul de Menopauză")}
             </h1>
             <div>
-              <span class="text-base font-semibold text-black" style="font-family: 'Cormorant Garamond', serif;">
+              <span
+                class="text-sm md:text-xl text-base font-semibold text-black"
+                style="font-family: 'Cormorant Garamond', serif;"
+              >
                 AESTHETIC LAB
               </span>
             </div>
